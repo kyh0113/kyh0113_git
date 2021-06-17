@@ -12,8 +12,8 @@ for i in range(len(array)):
 
 for i in range(n): 
     for j in range(array[i], m+1): 
-        d[j] = min(d[j], d[j - array[i]]+1) # 누적된 계산횟수에 1씩 더함
-
+        d[j] = min(d[j], d[j - array[i]]+1) 
+        # 현재의 수에 각 화폐를 빼면 그 전까지 계산된 누적된 최소 횟수가 나옴 
 
 if d[m] == 10001:
     print(-1)
