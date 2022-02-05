@@ -7,4 +7,4 @@ def solution(participant, completion):
         if participant[i] != completion[i]:
             return participant[i]
     
-    return participant[i+1]
+    return participant[i+1] # 참여자가 완주자보다 한명 더 많고 앞에사람들이 모두 완주를 했다면 맨 마지막에 남은 사람이 완주 못한 사람
