@@ -22,8 +22,8 @@ def dfs(data,y,x):
 cnt=0
 # 0이 발견되는 순간 카운트에 1 더하기
 for i in range(n):
-    for j in range(m):
-        if data[i][j]==0:
+    for j in range(m): # 2중 for문 돌면서 값이 0인 위치를 찾아다님
+        if data[i][j]==0: 
             cnt+=1
             dfs(data,i,j)
 
